@@ -43,7 +43,7 @@ void loop()
   enc.tick();
   if(enc.click() and var!=false)
     var=false;
-  else:
+  else if(enc.click() and var!=true)
     var=true;
   
   if(var)
@@ -51,7 +51,7 @@ void loop()
     Serial.println("regim 1");
     messure(lcd, thermocouple_1, thermocouple_2, thermocouple_3);
   }
-  else:
+  else
   {
     Serial.println("regim 2");
   }
