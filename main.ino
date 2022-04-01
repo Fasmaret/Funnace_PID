@@ -5,10 +5,6 @@
 #include <EncButton.h>
 #include "Furnace.h"
 
-#define CLK 2 //(D)igital порт D2
-#define DT 3 //(D)igital порт D3
-#define SW 4 //(D)igital порт D4
-
 LiquidCrystal_I2C lcd(0x27,20,4); 
 
 int thermoDO_1 = 2;  //он же SO
